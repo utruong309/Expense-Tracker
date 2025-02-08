@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <div id="auth-forms">
+            <form id="signup-form">
+                <h2>Sign Up</h2>
+                <input type="text" id="username" placeholder="Username" required />
+                <input type="password" id="password" placeholder="Password" required />
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required />
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <form id="login-form">
+                <h2>Login</h2>
+                <input type="text" id="login-username" placeholder="Username" required />
+                <input type="password" id="login-password" placeholder="Password" required />
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="expense-section" style="display: none;">
+            <form id="expense-form">
+                <input type="text" id="expense-name" placeholder="Expense Name" required />
+                <input type="number" id="expense-amount" placeholder="Amount" required />
+                <select id="expense-category" required>
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="Food">Food</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="date" id="expense-date" required />
+                <button type="submit">Add Expense</button>
+            </form>
+
+            <div class="expense-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Expense Name</th>
+                            <th>Amount</th>
+                            <th>Category</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expense-list"></tbody>
+                </table>
+                <div class="total-amount">
+                    <strong>Total:</strong> $<span id="total-amount">0</span>
+                </div>
+            </div>
+
+            <div class="filter">
+                <label for="filter-category">Filter by Category:</label>
+                <select id="filter-category">
+                    <option value="All">All</option>
+                    <option value="Food">Food</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+        
+            <div class="chart-container">
+                <canvas id="expense-chart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
