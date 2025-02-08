@@ -25,7 +25,7 @@ A simple and intuitive web-based expense tracker that helps users **manage their
 
 ## 🎯 **Live Demo** 
 
-[Personal Finance Tracker Demo](http://127.0.0.1:5500/index.html)
+[Personal Finance Tracker Demo](https://personal-finance-tracker-git-main-uyen-truongs-projects.vercel.app/)
 
 
 
