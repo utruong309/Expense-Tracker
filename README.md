@@ -1,6 +1,6 @@
 # 📌 **Expense Tracker**  
 
-A simple and intuitive web-based expense tracker that helps users **manage their finances efficiently**.  
+A simple and intuitive web-based expense tracker that helps users manage their finances efficiently.  
 
 ---
 
