@@ -1,4 +1,4 @@
-# 📌 **Expense Tracker**  
+# 📌 **Personal Finance Tracker**  
 
 A simple and intuitive web-based expense tracker that helps users manage their finances efficiently.  
 
