@@ -20,6 +20,7 @@ A simple and intuitive web-based expense tracker that helps users manage their f
 🔹 **Frontend:** HTML, CSS, JavaScript
 
 🔹 **Library:** [Chart.js](https://www.chartjs.org/) (for data visualization)  
+
 🔹 **Data Storage:** LocalStorage (for saving user credentials and expenses)  
 
 ---
