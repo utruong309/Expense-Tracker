@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const signupForm = document.getElementById("signup-form");
+    const signupForm = document.getElementById("signup-form"); 
     const loginForm = document.getElementById("login-form");
     const expenseForm = document.getElementById("expense-form");
     const expenseList = document.getElementById("expense-list");
@@ -10,13 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const ctx = document.getElementById('expense-chart').getContext('2d');
 
     let expenses = [];
-    let currentUser = null;
+    let currentUser = null; // keep track of the logged-in users 
     let chart = null;
 
     signupForm.addEventListener("submit", (e) => {
-        e.preventDefault();
+        e.preventDefault(); // prevent default behaviours of the submit button which is reloading the whole page 
 
-        const username = document.getElementById("username").value;
+        const username = document.getElementById("username").value; // value property: get the user's input data 
         const password = document.getElementById("password").value;
         const confirmPassword = document.getElementById("confirm-password").value;
 
@@ -25,11 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        const user = { username, password, expenses: [] };
-        localStorage.setItem(username, JSON.stringify(user));
+        // Store user data in Local Storage so that it persists even when the page is refreshed 
+        const user = { username, password, expenses: [] }; // object to store username, password and an empty array to store expenses
+        localStorage.setItem(username, JSON.stringify(user)); // save the user data in the browser with the username key, stringtify user object bc Local Storage can store strings
 
         alert("User registered successfully!");
     });
+
     loginForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
@@ -165,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         chart = new Chart(ctx, {
-            type: 'pie', // Change this to 'bar' for a bar chart
+            type: 'pie', // change this to 'bar' for a bar chart
             data: {
                 labels: categories,
                 datasets: [{
