@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         alert("User registered successfully!");
     });
-
     loginForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
