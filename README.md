@@ -6,12 +6,12 @@ A simple and intuitive web-based expense tracker that helps users manage their f
 
 ## **Features**  
 
-**User Authentication** – Sign up and log in securely.  
-**Expense Logging** – Add, edit, and delete expenses with category selection.  
-**Total Expense Calculation** – Automatically updates total spending.  
-**Expense Filtering** – Filter expenses by category.  
-**Data Visualization** – Interactive charts to track spending trends.  
-**Local Storage** – Saves user data in the browser.  
+**User Authentication**: Sign up and log in securely.  
+**Expense Logging**: Add, edit, and delete expenses with category selection.  
+**Total Expense Calculation**: Automatically updates total spending.  
+**Expense Filtering**: Filter expenses by category.  
+**Data Visualization**: Interactive charts to track spending trends.  
+**Local Storage**: Saves user data in the browser.  
 
 ---
 
